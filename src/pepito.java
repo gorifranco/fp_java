@@ -9,23 +9,23 @@ public class pepito {
 
     }
 
-    public int suma(int a, int b){
+    public int suma(int a, int b) {
         int resultado;
-        resultado = a+b;
+        resultado = a + b;
         return resultado;
     }
 
-    public boolean esPar(int a){
+    public boolean esPar(int a) {
         boolean par;
-        if(a % 2 == 0){
+        if (a % 2 == 0) {
             par = true;
-        }else{
+        } else {
             par = false;
         }
         return par;
     }
 
-    public void clase2(){
+    public void clase2() {
 
         System.out.println("hola :)");
 

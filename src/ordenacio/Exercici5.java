@@ -6,6 +6,6 @@ public class Exercici5 {
         for (int i = 0; i < a.length; i++) {
             a[i] = i;
         }
-        System.out.println(UtilitatsOrdenacio.cercaBinaria(a,15));
+        System.out.println(UtilitatsOrdenacio.cercaBinaria(a, 15));
     }
 }

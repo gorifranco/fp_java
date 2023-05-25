@@ -12,6 +12,7 @@ public class UtilitatsOrdenacio {
             }
         }
     }
+
     public static void insertSort(int[] a) {
         for (int i = 1; i < a.length; i++) {
             int index = a[i];
@@ -23,6 +24,7 @@ public class UtilitatsOrdenacio {
             a[j + 1] = index;
         }
     }
+
     public static void quickSort(int[] a, int esquerra, int dreta) {
         int i = esquerra;
         int j = dreta;
@@ -49,21 +51,22 @@ public class UtilitatsOrdenacio {
             quickSort(a, i, dreta);
         }
     }
-    public static int cercaBinaria(int[] array, int a){
+
+    public static int cercaBinaria(int[] array, int a) {
         int comprobacions = 0;
         int inici = 0;
-        int fi = array.length-1;
+        int fi = array.length - 1;
         int mig;
-        while(inici <= fi){
+        while (inici <= fi) {
             comprobacions++;
             mig = (inici + fi) / 2;
-            if(a == array[mig]){
+            if (a == array[mig]) {
                 System.out.println("Comprobaicons: " + comprobacions);
                 return mig;
-            }else if(array[mig]>a){
-                fi = mig-1;
-            }else{
-                inici = mig +1;
+            } else if (array[mig] > a) {
+                fi = mig - 1;
+            } else {
+                inici = mig + 1;
             }
         }
         System.out.println("Comprobaicons: " + comprobacions);
