@@ -1,2 +1,4 @@
-package databases;public class Autor {
+package databases;
+
+public class Autor {
 }

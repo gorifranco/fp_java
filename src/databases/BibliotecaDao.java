@@ -1,2 +1,4 @@
-package databases;public class BibliotecaDao {
+package databases;
+
+public class BibliotecaDao {
 }

@@ -32,7 +32,7 @@ public class Modul {
         return horesSetmanals;
     }
 
-    public void setHoresSetmanals(int horesSetmanals){
+    public void setHoresSetmanals(int horesSetmanals) {
         this.horesSetmanals = horesSetmanals;
     }
 

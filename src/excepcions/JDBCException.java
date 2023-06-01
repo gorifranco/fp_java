@@ -1,2 +1,4 @@
-package excepcions;public class JDBCException {
+package excepcions;
+
+public class JDBCException {
 }

@@ -1,2 +1,4 @@
-package databases;public class Nacionalitat {
+package databases;
+
+public class Nacionalitat {
 }

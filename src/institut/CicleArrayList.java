@@ -39,7 +39,7 @@ public class CicleArrayList {
     }
 
     public CicleArrayList(String nom, int alumnes, int maximModuls) {
-setNom(nom);
+        setNom(nom);
         this.alumnes = alumnes;
         moduls = new ArrayList<>();
         this.maximModuls = maximModuls;
@@ -58,7 +58,7 @@ setNom(nom);
      * @return true si l'ha pogut afegir, false si el cicle ja té el màxim de
      * mòduls permesos.
      */
-    public boolean afegirModul(Modul nou){
+    public boolean afegirModul(Modul nou) {
 
         if (moduls.size() < maximModuls) {
             moduls.add(nou);
@@ -74,7 +74,7 @@ setNom(nom);
      * @param nom EL nom del mòdul que cercam
      * @return El mòdul que hem trobat, o null si no el trobam
      */
-    private Modul cercarModul(String nom){
+    private Modul cercarModul(String nom) {
 
         for (Modul m : moduls) {
             if (m.getNom().equalsIgnoreCase(nom)) {
@@ -91,7 +91,7 @@ setNom(nom);
      * @param nom El nom del mòdul que volem eliminar.
      * @return true si l'ha trobat i l'ha pogut eliminar, false en cas contrari.
      */
-    public boolean eliminarModul(String nom){
+    public boolean eliminarModul(String nom) {
         Modul eliminat = cercarModul(nom);
         if (eliminat != null) {
             moduls.remove(eliminat);
@@ -107,9 +107,9 @@ setNom(nom);
      * @param nom El nom del mòdul que volem eliminar.
      * @return true si l'ha trobat i l'ha pogut eliminar, false en cas contrari.
      */
-    public boolean eliminarModul2(String nom) throws InstitutException{
+    public boolean eliminarModul2(String nom) throws InstitutException {
 
-        if(nom.length() == 0){
+        if (nom.length() == 0) {
             throw new InstitutException("Cadena buida", 12);
         }
         for (int i = 0; i < moduls.size(); i++) {

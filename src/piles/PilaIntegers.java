@@ -3,27 +3,31 @@ package piles;
 public class PilaIntegers<T> {
     private ElementInteger<T> inici;
 
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return inici == null;
     }
-    public void push(T valor){
-        if(isEmpty()){
+
+    public void push(T valor) {
+        if (isEmpty()) {
             inici = new ElementInteger<T>(valor, null);
-        }else{
+        } else {
             inici = new ElementInteger<T>(valor, inici);
         }
     }
-    public T peek(){
+
+    public T peek() {
         try {
             return inici.getInfo();
-        }catch (Exception e){
+        } catch (Exception e) {
             return null;
         }
     }
-    public void pop(){
-        if(!isEmpty()) inici = inici.getSeguent();
+
+    public void pop() {
+        if (!isEmpty()) inici = inici.getSeguent();
     }
-    public T poll(){
+
+    public T poll() {
         T seguent = peek();
         pop();
         return seguent;
@@ -33,10 +37,10 @@ public class PilaIntegers<T> {
     public String toString() {
         String cadena = "";
         ElementInteger<T> e = inici;
-        do{
+        do {
             cadena += e.getInfo() + " ";
             e = e.getSeguent();
-        }while(e != null);
+        } while (e != null);
         return cadena;
     }
 }
